@@ -1,0 +1,15 @@
+<?php
+
+$ handle = fopen("test.txt", "r");
+
+while(!feof($handle)){
+	$data = fgets($handle);
+	echo "$data <br /><br />";
+
+}
+fclose($handle);
+
+$handle1 = fopen("test.txt", "r");
+while($data1 = fgetc($handle1)){	
+	echo "<br><br>$data1";
+}
